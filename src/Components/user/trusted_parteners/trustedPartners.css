@@ -1,0 +1,27 @@
+.trusted-partners {
+    padding: 40px 21px;
+    overflow-x: hidden;
+  }
+  
+  .trusted-partners h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  .trusted-partners h2::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    display: block;
+    margin: 14px auto;
+  }
+  .trusted-partners .row {
+    margin-bottom: 20px;
+  }
+  
+  .trusted-partners img {
+    /* max-width: 100px; */
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,119 @@
+.hero-section {
+  background-color: rgb(220 220 220 / 76%);; /* Light background */
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.hero-text {
+  padding: 0 50px;
+}
+.hero-buttons {
+  justify-content: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hero-text {
+    padding: 0 20px;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+.hero-buttons .how-work {
+  font-size: 19px;
+}
+.hero-buttons .how-work svg {
+  font-size: 32px;
+}
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #6c757d;
+}
+
+.hero-link {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+.active-students {
+    position: absolute;
+    top: 52%;
+    z-index: 100;
+    right: 48%;
+    background: var(--pink-color);
+    width: 83px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    align-items: center;
+    padding: 11px;
+    border-radius: 10px;
+}
+.active-students p{
+    color: #585858;
+    overflow: visible;
+}
+.active-students .count{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+    color: var(--main-color);
+}
+.courses {
+    position: absolute;
+    top: 69%;
+    z-index: 100;
+    right: 50%;
+    background: var(--yellow-color);
+    width: 111px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 11px;
+    align-items: center;
+    padding: 18px;
+    border-radius: 10px;
+}
+.courses p{
+    color: #585858;
+    overflow: visible;
+    font-size: 17px;
+}
+.courses .count{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 992px) {
+    .courses,.active-students{
+        display: none;
+    }
+}

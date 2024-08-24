@@ -1,0 +1,18 @@
+.login-btn{
+    background: 0;
+    color: var(--main-color);
+    border: 0;
+    font-weight: 600;
+}
+.login-btn:hover{
+    background: 0;
+    color: var(--main-color);
+    border: 0;
+}
+a{
+    font-size: 18px !important;
+}
+
+.navbar-brand{
+    font-size: 21px !important;
+}
