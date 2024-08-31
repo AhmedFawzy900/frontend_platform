@@ -1,0 +1,30 @@
+.feedback {
+  padding: 60px 0;
+  background-color: #fafafa;
+  background-color: white;
+}
+.customer-info h6 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.customer-info p {
+  margin-bottom: 0px;
+  font-size: 13px;
+  color: #888;
+}
+/* .feedback .carousel-item {
+  display: flex;
+  justify-content: center;
+} */
+/* 
+.feedback .card {
+  max-width: 300px;
+  margin: auto;
+} */
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

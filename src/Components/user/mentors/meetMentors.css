@@ -1,0 +1,45 @@
+.mentors-section{
+    padding: 60px 0;
+    background-color: #fafafa;
+    background-color:white;
+}
+
+
+.mentors .card{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 337px;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+}
+.mentors .card-body{
+    align-items: start;
+}
+.mentors .card-text{
+    font-size:14px;
+}
+.mentors .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mentors .card-text {
+  color: #6c757d;
+
+}
+
+.mentors .text-muted {
+  font-size: 0.9rem;
+}
+
+.mentors .text-muted .icon{
+    background:var(--yellow-color);
+    padding: 2px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.mentors img {
+  height: 200px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
