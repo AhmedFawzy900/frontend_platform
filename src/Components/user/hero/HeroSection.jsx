@@ -7,8 +7,7 @@ const HeroSection = () => {
   return (
     <Container fluid className="hero-section" dir="rtl">
       <Row className="align-items-center">
-        <Col md={6} className="hero-text" >
-
+        <Col md={6} className="hero-text py-2" >
           <h1 className="hero-title">احصل على دورات عالمية من أفضل المدربين</h1>
           <p className="hero-subtitle">
             احصل على دورات عالية الجودة مع أفضل الأسعار. يمكنك الآن الحصول على
@@ -23,7 +22,7 @@ const HeroSection = () => {
             </button>
           </div>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="p-0">
           <img src={heroImage} alt="Hero" className="img-fluid" />
         </Col>
         {/* absolute elements */}

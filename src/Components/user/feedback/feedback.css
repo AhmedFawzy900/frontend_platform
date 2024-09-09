@@ -28,3 +28,17 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:766px) {
+  .cards{
+    margin: 10px 0;
+  }
+}
+.feedback .buttons button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 7px !important;
+}
+.feedback .buttons button:hover{
+  background-color: #fafafa;
+}

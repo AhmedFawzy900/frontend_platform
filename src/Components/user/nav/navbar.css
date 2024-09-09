@@ -6,7 +6,7 @@
 }
 .login-btn:hover{
     background: 0;
-    color: var(--main-color);
+    color: #007bff;
     border: 0;
 }
 a{
@@ -23,3 +23,30 @@ a{
     height: 50px;
     object-fit: cover;
 }
+.nav-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000; /* Change this to your desired color */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change this to the hover color */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff; /* Change to your preferred underline color */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  

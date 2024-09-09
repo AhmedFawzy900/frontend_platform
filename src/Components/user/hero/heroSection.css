@@ -1,6 +1,6 @@
 .hero-section {
   background-color: rgb(220 220 220 / 76%);; /* Light background */
-  padding: 60px 0;
+  /* padding: 60px 0; */
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -16,6 +16,7 @@
 @media screen and (max-width: 768px) {
   .hero-text {
     padding: 0 20px;
+    margin-top: 20px;
   }
   .hero-buttons {
     justify-content: center;
@@ -44,6 +45,9 @@
   text-decoration: underline;
   color: #007bff;
 }
+.hero-section .img-fluid {
+  max-width: 126%;
+}
 
 @media (max-width: 768px) {
   .hero-section {
@@ -56,6 +60,12 @@
   .hero-subtitle {
     font-size: 1rem;
   }
+  .hero-section .img-fluid {
+    max-width: 100%;
+  }
+}
+.hero-text .box-btn-filled:hover{
+  background-color:rgb(220 220 220 / 76%) !important;
 }
 .active-students {
     position: absolute;
@@ -87,7 +97,7 @@
     position: absolute;
     top: 69%;
     z-index: 100;
-    right: 50%;
+    right: 49%;
     background: var(--yellow-color);
     width: 111px;
     height: 78px;
