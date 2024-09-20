@@ -19,7 +19,7 @@
     "swiper": "^11.1.12",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/AhmedFawzy900/frontend_platform.git",
+  "homepage": "https://AhmedFawzy900.github.io/frontend_platform.git",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
