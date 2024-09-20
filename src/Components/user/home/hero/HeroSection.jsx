@@ -1,11 +1,13 @@
 import React from "react";
 import './heroSection.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import heroImage from '../../../images/hero.jpg';
+import heroImage from '../../../../images/hero.jpg';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
-    <Container fluid className="hero-section" dir="rtl">
+    <Container fluid className="hero-section" dir="rtl" id="home">
       <Row className="align-items-center">
         <Col md={6} className="hero-text py-2" >
           <h1 className="hero-title">احصل على دورات عالمية من أفضل المدربين</h1>
@@ -14,7 +16,7 @@ const HeroSection = () => {
             أفضل الدورات من المدربين الرائدين حول العالم.
           </p>
           <div className="hero-buttons d-flex align-items-center ">
-            <button className="mr-2 box-btn-filled">
+            <button className="mr-2 box-btn-filled" onClick={() => navigate("/register")}>
               ابدأ الآن
             </button>
             <button className="btn how-work">

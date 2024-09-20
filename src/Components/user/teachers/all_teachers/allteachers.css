@@ -1,0 +1,94 @@
+/* Start Team */
+.teachers{
+    padding: 30px 0;
+}
+.team {
+    position: relative;
+}
+.team .main-title{
+    margin: 20px 20px;
+}
+.team .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    gap: 56px 40px;
+}
+.team .box{
+    position: relative;
+}
+.team .box::before ,
+.team .box::after{
+    content:"";
+    position: absolute;
+    background-color: #f3f3f3;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+.team .box::before{
+    width: calc(100% - 60px);
+    z-index: -2;
+}
+.team .box::after{
+    background-color: #e4e4e4;
+    width: 0;
+    z-index: -1;
+}
+.team .box:hover::after{
+    width: calc(100% - 60px);
+
+}
+.team .box:hover .data img{
+    filter: grayscale(50%);
+}
+.team .box .data{
+    display: flex;
+    padding-top: 60px;
+    align-items: center;
+}
+.team .box .data img{
+    width: calc(100% - 60px);
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+.team .box .data .social{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    flex-direction: column;
+    gap: 20px;
+}
+.team .box .data .social a{
+    display: flex;
+    width: 60px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.team .box .data .social a:hover i{
+    color: var(--main-color);
+}
+.team .box .data .social i{
+    color:#777;
+    transition: var(--main-transition);
+}
+.team .box .info{
+    padding-right: 80px;
+}
+.team .box .info h3{
+    color:var(--main-color);
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    transition: var(--main-transition);
+}
+.team .box:hover .info h3{
+    color:#555;
+}
+.team .box .info p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+/* End Team */

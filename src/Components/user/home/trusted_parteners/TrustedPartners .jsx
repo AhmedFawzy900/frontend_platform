@@ -2,14 +2,14 @@ import React from 'react'
 import './trustedPartners.css'
 import { Container, Row, Col, Image } from 'react-bootstrap';
 // Import your partner logos here
-import partner1 from '../../../images/un1.png';
-import partner2 from '../../../images/un2.png';
-import partner3 from '../../../images/un3.png';
-import partner4 from '../../../images/un4.png';
-import partner5 from '../../../images/un5.png';
+import partner1 from '../../../../images/un1.png';
+import partner2 from '../../../../images/un2.png';
+import partner3 from '../../../../images/un3.png';
+import partner4 from '../../../../images/un4.png';
+import partner5 from '../../../../images/un5.png';
 const TrustedPartners  = () => {
   return (
-    <Container className="trusted-partners" dir="rtl">
+    <Container className="trusted-partners" dir="rtl" id='trusted-partners'>
     <h2 className="text-center mb-4">شركاؤنا الموثوقون &amp; المستثمرون حول العالم</h2>
     <Row className="justify-content-center align-items-center">
       <Col xs={6} md={2}>

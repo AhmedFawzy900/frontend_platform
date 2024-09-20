@@ -5,6 +5,9 @@ import Login from './Pages/auth/Login'
 import Register from './Pages/auth/Register'
 import Dashboard from "./Pages/dashboard/Dashboard";
 import Homepage from "./Pages/homepage/Homepage";
+import MyLearning from "./Pages/mylearning/MyLearning";
+import Teachers from "./Pages/teachers/Teachers";
+import Courses from "./Pages/courses/Courses";
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,9 @@ function App() {
 
           {/* ***** user preview routes ***** */}
           <Route path="/" element={<Homepage />}></Route>
+          <Route path="/mylearning" element={<MyLearning />}></Route>
+          <Route path="/teachers" element={<Teachers />}></Route>
+          <Route path="/cources" element={<Courses />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

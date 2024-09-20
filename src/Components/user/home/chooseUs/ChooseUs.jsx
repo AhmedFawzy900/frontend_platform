@@ -1,8 +1,8 @@
 import React from "react";
 import "./chooseUs.css";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import img1 from "../../../images/cho1.jpg";
-import img2 from "../../../images/cho2.jpg";
+import img1 from "../../../../images/cho1.jpg";
+import img2 from "../../../../images/cho2.jpg";
 import SupportIcon from "@mui/icons-material/SupportAgent";
 import SchoolIcon from "@mui/icons-material/School";
 import BookIcon from "@mui/icons-material/Book";
@@ -34,7 +34,7 @@ const features = [
 
 const ChooseUs = () => {
   return (
-    <div className="choose-us">
+    <div className="choose-us" id="choose-us">
       <Container>
         <Row>
           <Col md={6}>

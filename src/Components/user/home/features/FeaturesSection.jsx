@@ -7,7 +7,7 @@ import './featuresSection.css'; // You'll create this CSS file for custom styles
 
 const FeaturesSection = () => {
   return (
-<Container fluid className="features-section" dir="rtl">
+<Container fluid className="features-section" dir="rtl" id="features">
       <Row className="justify-content-center gap-4">
         <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#fffbea' }}>
         <div className="icon-container i1">

@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import "./feedback.css";
 import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
-import person1 from "../../../images/avatar-01.png"; // Placeholder, replace with actual image
-import person2 from "../../../images/avatar-02.png"; // Placeholder, replace with actual image
-import person3 from "../../../images/avatar-03.png"; // Placeholder, replace with actual image
+import person1 from "../../../../images/avatar-01.png"; // Placeholder, replace with actual image
+import person2 from "../../../../images/avatar-02.png"; // Placeholder, replace with actual image
+import person3 from "../../../../images/avatar-03.png"; // Placeholder, replace with actual image
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
@@ -59,7 +59,7 @@ const colors = [
 const Feedback = () => {
   const swiperRef = useRef(null); // Reference to Swiper instance
   return (
-    <div className="feedback">
+    <div className="feedback" id="feedback">
       <Container className="d-flex justify-content-between align-items-center">
         <h1>اراء العملاء</h1>
         <div className="buttons">

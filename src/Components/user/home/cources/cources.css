@@ -1,0 +1,53 @@
+.courses-part .card {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 450px;
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+}
+  .courses-part .card:hover{
+    box-shadow: 0 10px 22px rgb(0 0 0 / 17%) !important;
+}
+  .courses-part .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .courses-part .card p{
+    color: #888;
+    font-size: 18px;
+  }
+  .courses-part .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .courses-part .card .price{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0;
+  }
+  
+  .courses-part .card-text {
+    color: #28a745;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .courses-part .card img {
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .courses-part .enroll-btn{
+    background-color: var(--yellow-color) !important;
+    border: 0 !important;
+    font-size: 16px !important;
+    color: black !important;
+    font-weight: 600 !important;
+  }
+  .courses-part .enroll-btn:hover{
+    color: black !important;
+    border: 0 !important;
+  }

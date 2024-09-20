@@ -1,7 +1,10 @@
-import React from "react";
-import "./cources.css";
+import React from 'react'
+import './courses.css'
+import ArabicNavbar from '../../Components/user/nav/ArabicNavbar'
+import Footer from '../../Components/user/footer/Footer'
+import Cources from '../../Components/user/home/cources/Cources'
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import img from "../../../images/hero.jpg";
+import img from "../../images/hero.jpg";
 
 const courses = [
   {
@@ -19,12 +22,28 @@ const courses = [
     price: "$210.00",
     image: img, 
   },
+  {
+    title: "كن مصمم ويب كامل في 5 أشهر",
+    price: "$190.00",
+    image: img, 
+  },
+  {
+    title: "تعلم تصميم واجهات المستخدم مع المزيد من النظرية والتطبيق",
+    price: "$180.00",
+    image: img, 
+  },
+  {
+    title: "كن مطورًا مبتدئًا في 3 أشهر",
+    price: "$210.00",
+    image: img, 
+  },
 ];
-
-const Cources = () => {
+const Courses = () => {
   return (
-    <Container className="my-5">
-      <h2 className="text-center mb-4">دوراتنا الاكثر مبيعًا</h2>
+    <div>
+      <ArabicNavbar />
+      {/* content */}
+      <Container className="my-5 courses-part" id="cources">
       <Row className="">
         {courses.map((course, index) => (
           <Col md={4} key={index}>
@@ -42,11 +61,11 @@ const Cources = () => {
           </Col>
         ))}
       </Row>
-      <div className="d-flex justify-content-center align-items-center mt-4">
-        <button className="circle-btn-outline black-btn-bg">جميع الدورات</button>
-      </div>
     </Container>
-  );
-};
+      {/* content */}
+      <Footer />
+    </div>
+  )
+}
 
-export default Cources;
+export default Courses

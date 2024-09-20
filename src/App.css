@@ -5,6 +5,7 @@
   --yellow-color : #faeb73 ;
   --pink-color :#e2b7e0 ;
   --blue-color : #87ebe5 ;
+  --main-transition: 0.3s;
 }
 *{
   /* overflow-x: hidden;
@@ -25,15 +26,15 @@ li{
 }
 
 /* general buttons style */
-.circle-btn-outline{
+.circle-btn-outline {
   background: 0;
   color: var(--main-color);
   font-weight: bold;
-  padding: 12px 39px;
+  padding: 8px 30px;
   border-radius: 30px;
   margin-right: 0px;
   border-color: var(--main-color);
-  font-size: 16px;
+  font-size: 15px;
 }
 .circle-btn-outline:hover{
   background-color: var(--main-color);
@@ -83,7 +84,7 @@ li{
   transition: 0.3s;
 }
 
-/* loader css */
+/* loader css
 .loader {
   width: 16px;
   height: 16px;
@@ -132,4 +133,4 @@ li{
     color: white;
   }
 }
-    
+     */

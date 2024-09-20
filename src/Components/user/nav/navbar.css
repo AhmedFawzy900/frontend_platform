@@ -1,5 +1,11 @@
+.arabic-navbar{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .login-btn{
-    background: 0;
+    background: 0 !important;
     color: var(--main-color);
     border: 0;
     font-weight: 600;
@@ -32,7 +38,7 @@ a{
   }
   
   .nav-link:hover {
-    color: #007bff; /* Change this to the hover color */
+    color: #007bff !important; /* Change this to the hover color */
   }
   
   .nav-link::after {
@@ -50,3 +56,8 @@ a{
     width: 100%;
   }
   
+  @media screen and (max-width: 1200px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+      font-size: 14px !important;
+    }
+  }

@@ -1,52 +1,62 @@
-.card {
+.my-courses{
+    margin-top: -100px;
+}
+.my-courses .card {
     border-radius: 10px;
     overflow: hidden;
     height: 450px;
     transition: all 0.2s ease-in-out;
     padding: 10px;
 }
-  .card:hover{
+  .my-courses .card:hover{
     box-shadow: 0 10px 22px rgb(0 0 0 / 17%) !important;
 }
-  .card-body{
+  .my-courses .card-body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
   }
-  .card p{
+  .my-courses .card p{
     color: #888;
     font-size: 18px;
+    margin-bottom: 0;
   }
-  .card-title {
-    font-size: 1.2rem;
+  .my-courses .card-title {
+    font-size: 1rem;
     font-weight: bold;
   }
-  .card .price{
+  .my-courses .card .price{
     font-size: 1.2rem;
     font-weight: bold;
     color: black;
+    margin-bottom: 0;
   }
   
-  .card-text {
+  .my-courses .card-text {
     color: #28a745;
     font-size: 1rem;
     margin-bottom: 1rem;
   }
   
-  .card img {
+  .my-courses .card img {
     height: 240px;
     object-fit: cover;
     border-radius: 5px;
   }
   
-  .enroll-btn{
+  .my-courses .enroll-btn{
     background-color: var(--yellow-color) !important;
     border: 0 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     color: black !important;
     font-weight: 600 !important;
   }
-  .enroll-btn:hover{
+  .my-courses .enroll-btn:hover{
     color: black !important;
     border: 0 !important;
+  }
+  .my-courses .search span,
+  .my-courses .search input{
+    border-radius: 2px !important;
   }
