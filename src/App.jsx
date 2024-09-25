@@ -11,7 +11,6 @@ import Courses from "./Pages/courses/Courses";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
         <Routes>
           {/* ****** auth routes ****** */}
           <Route path="/register" element={<Register />}></Route>
@@ -26,7 +25,6 @@ function App() {
           <Route path="/teachers" element={<Teachers />}></Route>
           <Route path="/cources" element={<Courses />}></Route>
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }
