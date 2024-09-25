@@ -42,3 +42,6 @@
 .feedback .buttons button:hover{
   background-color: #fafafa;
 }
+.feedback .card-text{
+  color: #7a7a7a;
+}

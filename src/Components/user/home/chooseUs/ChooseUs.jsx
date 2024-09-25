@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./chooseUs.css";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import img1 from "../../../../images/cho1.jpg";
@@ -7,7 +7,8 @@ import SupportIcon from "@mui/icons-material/SupportAgent";
 import SchoolIcon from "@mui/icons-material/School";
 import BookIcon from "@mui/icons-material/Book";
 import ChatIcon from "@mui/icons-material/Chat";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 const features = [
   {
     title: "أفضل نظام دعم",
@@ -33,11 +34,14 @@ const features = [
 ];
 
 const ChooseUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1300 });
+  }, []);
   return (
     <div className="choose-us" id="choose-us">
       <Container>
         <Row>
-          <Col md={6}>
+          <Col lg={6} md={12} sm={12} data-aos="fade-left">
             <h2 className="choose-us-title">
               لماذا يختارانا الناس عن باقي المنصات؟
             </h2>
@@ -46,7 +50,7 @@ const ChooseUs = () => {
               <img src={img2} alt="" className="img2" />
             </div>
           </Col>
-          <Col md={6}>
+          <Col lg={6} md={12} sm={12} data-aos="fade-right">
             <p className="choose-us-desc mb-4">
               {" "}
               نحن نلتزم بتقديم أفضل تجربة تعليمية لطلابنا من خلال توفير دعم مخصص
@@ -55,11 +59,11 @@ const ChooseUs = () => {
             </p>
             <Row>
               {features.map((feature, index) => (
-                <Col md={6} key={index} className="mb-4">
+                <Col lg={6} md={12} sm={12} key={index} className="mb-4" data-aos="fade-up">
                   <Card className="h-100">
                     <Card.Body className="d-flex align-items-center">
-                      <div className="">{feature.icon}</div>
-                      <div>
+                      <div className="mx-3">{feature.icon}</div>
+                      <div className="text">
                         <Card.Title>{feature.title}</Card.Title>
                         <Card.Text>{feature.description}</Card.Text>
                       </div>

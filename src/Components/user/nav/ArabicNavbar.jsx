@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "./navbar.css";
 import logo from "../../../images/logo1.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const ArabicNavbar = () => {
   const navigate = useNavigate();
   return (
@@ -14,18 +14,18 @@ const ArabicNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="/" className="nav-link mx-2">
+            <Link to="/" className="nav-link mx-2">
               الرئيسية
-            </Nav.Link>
-            <Nav.Link href="/cources" className="nav-link mx-2">
+            </Link>
+            <Link to="/cources" className="nav-link mx-2">
               الدورات
-            </Nav.Link>
-            <Nav.Link href="/teachers" className="nav-link mx-2">
+            </Link>
+            <Link to="/teachers" className="nav-link mx-2">
               المدربين
-            </Nav.Link>
-            <Nav.Link href="/mylearning" className="nav-link mx-2">
+            </Link>
+            <Link to="/mylearning" className="nav-link mx-2">
               اشتراكاتي
-            </Nav.Link>
+            </Link>
           </Nav>
           <Button onClick={()=> navigate("/login")} className="ml-2 login-btn ">تسجيل الدخول</Button>
           <button className="circle-btn-outline mt-2" onClick={()=> navigate("/register")}>ابدأ الآن</button>

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./mycourses.css";
 import { Container, Row, Col, Card, Button, Form, InputGroup } from "react-bootstrap";
 import img from "../../../../images/hero.jpg";
 import { Search } from "@mui/icons-material";
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const courses = [
   {
     title: "كن مصمم ويب كامل في 5 أشهر",
@@ -23,6 +24,9 @@ const courses = [
 ];
 
 const MyCourses = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1100 });
+  }, []);
   return (
     <div className="my-courses container card mb-5">
       <div className="card-header p-3 d-flex justify-content-between">
@@ -46,9 +50,9 @@ const MyCourses = () => {
         <Container className=" " >
           <Row className="">
             {courses.map((course, index) => (
-              <Col md={6} lg={4} key={index}>
+              <Col md={6} lg={4} key={index} data-aos="zoom-out">
                 <Card className="mb-4 shadow-sm ">
-                  <Card.Img variant="top" src={course.image} loading="lazy"  />
+                  <Card.Img variant="top" src={course.image} loading="lazy"   />
                   <Card.Body>
                     <p>عنوان</p>
                     <Card.Title>{course.title}</Card.Title>

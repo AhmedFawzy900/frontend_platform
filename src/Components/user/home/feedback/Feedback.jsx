@@ -96,7 +96,7 @@ const Feedback = () => {
               <Col md={4} key={index} className="mb-4">
                 <SwiperSlide>
                   <Card
-                    className="h-100"
+                    className="h-100 py-1"
                     style={{ backgroundColor: colors[index % colors.length] }}
                   >
                     <Card.Body>

@@ -1,15 +1,20 @@
 import React from 'react';
+import { useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import SchoolIcon from '@mui/icons-material/School';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import './featuresSection.css'; // You'll create this CSS file for custom styles
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const FeaturesSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1300 });
+  }, []);
   return (
 <Container fluid className="features-section" dir="rtl" id="features">
       <Row className="justify-content-center gap-4">
-        <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#fffbea' }}>
+        <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#fffbea' }} data-aos="fade-down">
         <div className="icon-container i1">
             <SchoolIcon className="feature-icon" />
           </div>
@@ -18,7 +23,7 @@ const FeaturesSection = () => {
             <p>لدينا مدربين مؤهلين بدرجة عالية وخبرة واسعة في جميع أنحاء العالم.</p>
           </div>
         </Col>
-        <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#fbeff4' }}>
+        <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#fbeff4' }} data-aos="fade-down" >
         <div className="icon-container i2">
             <LiveTvIcon className="feature-icon" />
           </div>
@@ -27,7 +32,7 @@ const FeaturesSection = () => {
             <p>نحن نقدم لطلابنا أفضل تعليم من خلال الفصول المباشرة.</p>
           </div> 
         </Col>
-        <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#e9f9f5' }}>
+        <Col md={3} className="feature-box text-right" style={{ backgroundColor: '#e9f9f5' }} data-aos="fade-down" >
           <div className="icon-container i3">
             <SupportAgentIcon className="feature-icon" />
           </div>

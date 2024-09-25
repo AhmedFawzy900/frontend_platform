@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './allteachers.css'
 import { Facebook, Twitter, YouTube } from '@mui/icons-material'
 import img from '../../../../images/avatar-01.png'
@@ -6,6 +6,8 @@ import img1 from "../../../../images/mentor1.jpg";
 import img2 from "../../../../images/mentor2.jpg";
 import img3 from "../../../../images/mentor3.jpg";
 import img4 from "../../../../images/mentor4.jpg";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const mentors = [
   {
     name: "ايمان محمد",
@@ -45,12 +47,15 @@ const mentors = [
 ];
 
 const AllTeachers = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1300 });
+  }, []);
   return (
     <div class="teachers">
     <div class="team" id="team">
         <div class="container">
         {mentors.map((mentor, index) => ( 
-          <div class="box">
+          <div class="box" data-aos="zoom-out">
             <div class="data">
               <div class="social">
                 <a href="#">
