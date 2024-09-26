@@ -61,3 +61,22 @@ a{
       font-size: 14px !important;
     }
   }
+  .logo-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .logo-img-btn,.logo-img-btn:hover,.logo-img-btn:focus{
+    background:0 !important;
+    border: 0;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: -77px;
+    margin-top: var(--bs-dropdown-spacer);
+}
+.dropdown-menu a{
+  font-size: 16px !important;
+    background: 0 !important;
+    text-align: center;
+}

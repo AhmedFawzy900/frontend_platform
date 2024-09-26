@@ -8,6 +8,7 @@ import Homepage from "./Pages/homepage/Homepage";
 import MyLearning from "./Pages/mylearning/MyLearning";
 import Teachers from "./Pages/teachers/Teachers";
 import Courses from "./Pages/courses/Courses";
+import Profile from "./Pages/profile/Profile";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
           <Route path="/mylearning" element={<MyLearning />}></Route>
           <Route path="/teachers" element={<Teachers />}></Route>
           <Route path="/cources" element={<Courses />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
         </Routes>
     </div>
   );

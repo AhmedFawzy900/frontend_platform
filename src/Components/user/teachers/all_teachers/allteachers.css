@@ -1,6 +1,7 @@
 /* Start Team */
 .teachers{
     padding: 30px 0;
+    overflow: hidden;
 }
 .team {
     position: relative;

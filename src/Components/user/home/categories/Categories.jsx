@@ -7,8 +7,7 @@ import img2 from "../../../../images/cate.jpg";
 import img3 from "../../../../images/cate2.jpg";
 import img4 from "../../../../images/cate3.jpg";
 import img5 from "../../../../images/cate4.jpg";
-import "aos/dist/aos.css";
-import AOS from "aos";
+
 const categories = [
   {
     title: " انجلش",
@@ -44,9 +43,6 @@ const categories = [
   },
 ];
 const Categories = () => {
-  useEffect(() => {
-    AOS.init({ duration: 900 });
-  }, []);
   return (
     <div className="categories">
       <Container>
@@ -55,7 +51,6 @@ const Categories = () => {
           {categories.map((category, index) => (
             <div
               className="category-card col-md-3 col-sm-6 col-lg-3 "
-              data-aos="fade-down"
               style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(${category.image})`,
               }}

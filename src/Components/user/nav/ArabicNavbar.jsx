@@ -3,6 +3,9 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "./navbar.css";
 import logo from "../../../images/logo1.png";
 import { Link, useNavigate } from "react-router-dom";
+import Dropdown from 'react-bootstrap/Dropdown';
+import img from '../../../images/avatar-01.png';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const ArabicNavbar = () => {
   const navigate = useNavigate();
   return (
@@ -27,8 +30,25 @@ const ArabicNavbar = () => {
               اشتراكاتي
             </Link>
           </Nav>
-          <Button onClick={()=> navigate("/login")} className="ml-2 login-btn ">تسجيل الدخول</Button>
-          <button className="circle-btn-outline mt-2" onClick={()=> navigate("/register")}>ابدأ الآن</button>
+          {/* <Button onClick={()=> navigate("/login")} className="ml-2 login-btn ">تسجيل الدخول</Button>
+          <button className="circle-btn-outline mt-2" onClick={()=> navigate("/register")}>ابدأ الآن</button> */}
+          <Dropdown >
+            <Dropdown.Toggle  id="dropdown-basic" className="logo-img-btn">
+              <img src={img} alt="" className="logo-img" />
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item eventKey="Action 1">
+                <Dropdown.Item eventKey="Action 1">
+                  
+                  <Link  to={"/profile"}>الملف الشخصي</Link>
+                </Dropdown.Item>
+              </Dropdown.Item>
+              <Dropdown.Item eventKey="Action 2">
+                <Link to={"/login"}>تسجيل الخروج</Link>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Navbar.Collapse>
       </Container>
     </Navbar>
